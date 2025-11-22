@@ -7,8 +7,6 @@ const router = require("./routes/routes");
 //       No es necesario importarlo aquí en index.js si solo lo usa el archivo de rutas.
 // Si lo necesitas globalmente, quedaría así:
 // const upload = require("./middlewares/multerConfig"); 
->>>>>>> 6308514aad8df461be0044577285bd1285fbdf13
-
 const app = express();
 
 app.use(cors());

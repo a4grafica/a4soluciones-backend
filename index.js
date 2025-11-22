@@ -2,9 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const router = require("./routes/routes");
-// Asumimos que quieres mantener la nueva estructura de carpetas:
-// La ruta DEBE apuntar a la carpeta 'routes' y al archivo 'routes.js' dentro de ella.
-const router = require("./routes/routes"); 
 
 // NOTA: El middleware 'multerConfig' debería importarse DENTRO de routes/routes.js
 //       No es necesario importarlo aquí en index.js si solo lo usa el archivo de rutas.

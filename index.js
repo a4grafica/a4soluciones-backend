@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const router = require("./routes/routes");
-
 // NOTA: El middleware 'multerConfig' debería importarse DENTRO de routes/routes.js
 //       No es necesario importarlo aquí en index.js si solo lo usa el archivo de rutas.
 // Si lo necesitas globalmente, quedaría así:
@@ -13,7 +12,6 @@ app.use(express.json());
 HEAD
 app.use("/files", express.static(path.join(__dirname, "files")))
 app.use("/", router);
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("Backend funcionando en puerto " + PORT));
 // Carpeta para archivos subidos
 app.use("/files", express.static(path.join(__dirname, "files")));
